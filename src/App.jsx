@@ -1,3 +1,4 @@
+import AnimatedCursor from "react-animated-cursor"
 import AboutMe from "./Components/AboutMe"
 import Baner from "./Components/Baner"
 import Project from "./Components/Project"
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+    <AnimatedCursor/>
       <Baner/>
       <AboutMe/>
       <ProjectHeading/>
