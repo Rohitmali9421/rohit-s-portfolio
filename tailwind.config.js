@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         Kanit: ["Kanit", "sans-serif"],
       },
+      boxShadow: {
+        '1xl': '0px 0px 30px -15px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
