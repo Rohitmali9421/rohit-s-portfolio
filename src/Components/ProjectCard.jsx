@@ -38,8 +38,6 @@ function ProjectCard({ Title, GithubLink, LiveLink, Image1, Image2, Image3 }) {
           src={Image2}
           alt="Description of the image"
         />
-
-
       </div>
     </div>
   )
