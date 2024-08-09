@@ -3,6 +3,7 @@ import AboutMe from "./Components/AboutMe"
 import Baner from "./Components/Baner"
 import Project from "./Components/Project"
 import ProjectHeading from "./Components/ProjectHeading"
+import Contact from "./Components/Contact"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <AboutMe/>
       <ProjectHeading/>
       <Project/>
+      <Contact/>
     </>
   )
 }

@@ -21,7 +21,7 @@ function AboutMe() {
 
 
         <>
-            <div className='py-6 px-4 grid md:grid-cols-5 md:gap-5  bg-[#fad9a6] items-center'>
+            <div className='py-6 px-4 grid md:grid-cols-5 md:gap-5  bg-blue-50 items-center'>
                 <div className='md:col-span-3 ml-6 md:ml-16  ' data-aos="fade-up">
                     <h1 className='font-extrabold  lg:text-7xl md:text-5xl text-3xl sm:text-4xl font-Kanit ' >
                         Hey, I'm Rohit
