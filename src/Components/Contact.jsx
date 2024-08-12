@@ -1,78 +1,102 @@
 import React from 'react'
-import { FaLocationDot } from "react-icons/fa6";
-import { MdLocalPhone } from "react-icons/md";
-import { MdOutlineWatchLater } from "react-icons/md";
 
 function Support() {
   return (
-    <section className="bg-blue-100" id="contact">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-      
-        <div className="flex items-stretch justify-center">
-          <div className="grid md:grid-cols-2">
-            <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg text-gray-600 ">
-                If you have any questions, concerns, or need assistance, feel free to reach out to us. Our team is here to help you with any inquiries you might have.
-              </p>
-              <ul className="mb-6 md:mb-0">
-                <li className="flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                    <FaLocationDot />
-                  </div>
-                  <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">Our Address</h3>
-                    <p className="text-gray-600">1230 Maecenas Street, Donec Road</p>
-                    <p className="text-gray-600">Maharastra, India</p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                    <MdLocalPhone />
-                  </div>
-                  <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">Contact</h3>
-                    <p className="text-gray-600">Mobile: +91 8767507569</p>
-                    <p className="text-gray-600">Email: support@PeekMart.com</p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                    <MdOutlineWatchLater />
-                  </div>
-                  <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">Working Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 08:00 - 17:00</p>
-                    <p className="text-gray-600">Saturday & Sunday: 08:00 - 12:00</p>
-                  </div>
-                </li>
-              </ul>
+    <div className="max-w-screen-lg mx-auto p-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 border">
+        <div className="bg-gray-900 md:col-span-4 p-10 text-white">
+          <p className="mt-4 text-sm leading-7 font-regular uppercase">
+            Contact
+          </p>
+          <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
+            Get In <span className="text-indigo-600">Touch</span>
+          </h3>
+          <p className="mt-4 leading-7 text-gray-200">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.
+          </p>
+
+          <div className="flex items-center mt-5">
+            --
+            <span className="text-sm">House #14, Street #12, Darulaman Road, Kabul, Afghanistan.</span>
+          </div>
+          <div className="flex items-center mt-5">
+            --
+            <span className="text-sm">+93 749 99 65 50</span>
+          </div>
+          <div className="flex items-center mt-5">
+            --
+            <span className="text-sm">24/7</span>
+          </div>
+
+        </div>
+        <form className="md:col-span-8 p-10">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-first-name">
+                First Name
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-first-name" type="text" placeholder="Jane"/> 
+              <p className="text-red-500 text-xs italic">Please fill out this field.</p>
             </div>
-            <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-              <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
-              <form id="contactForm">
-                <div className="mb-6">
-                  <div className="mx-0 mb-1 sm:mb-4">
-                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider">Name</label>
-                    <input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="name" />
-                  </div>
-                  <div className="mx-0 mb-1 sm:mb-4">
-                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider">Email</label>
-                    <input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="email" />
-                  </div>
-                  <div className="mx-0 mb-1 sm:mb-4">
-                    <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider">Message</label>
-                    <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"></textarea>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
-                </div>
-              </form>
+            <div className="w-full md:w-1/2 px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-last-name">
+                Last Name
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-last-name" type="text" placeholder="Doe"/>
             </div>
           </div>
-        </div>
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-password">
+                Email Address
+              </label>
+              <input
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-email" type="email" placeholder="********@*****.**"/>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                htmlFor="grid-password">
+                Your Message
+              </label>
+              <textarea rows="10"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+            </div>
+            <div className="flex justify-between w-full px-3">
+              <div className="md:flex md:items-center">
+                <label className="block text-gray-500 font-bold">
+                  <input className="mr-2 leading-tight" type="checkbox"/>
+                  <span className="text-sm">
+                    Send me your newsletter!
+                  </span>
+                </label>
+              </div>
+              <button
+                className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                type="submit">
+                Send Message
+              </button>
+
+            </div>
+            <a className="font-medium text-blue-600 hover:underline">Or click here to reveal our protected email address</a>
+
+          </div>
+
+        </form>
+
       </div>
-    </section>
+    </div>
   )
 }
 
