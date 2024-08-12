@@ -2,101 +2,112 @@ import React from 'react'
 
 function Support() {
   return (
-    <div className="max-w-screen-lg mx-auto p-5">
-      <div className="grid grid-cols-1 md:grid-cols-12 border">
-        <div className="bg-gray-900 md:col-span-4 p-10 text-white">
-          <p className="mt-4 text-sm leading-7 font-regular uppercase">
-            Contact
-          </p>
-          <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-            Get In <span className="text-indigo-600">Touch</span>
-          </h3>
-          <p className="mt-4 leading-7 text-gray-200">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.
-          </p>
-
-          <div className="flex items-center mt-5">
-            --
-            <span className="text-sm">House #14, Street #12, Darulaman Road, Kabul, Afghanistan.</span>
+    <section className="bg-gradient-to-t from-[#0b0d14] from-10% via-[#06071b] via-30% to-[#06071b] to-90% w-full ">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div class="mb-4">
+          <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+            <p class="text-base font-semibold uppercase tracking-wide text-blue-200">
+              Contact
+            </p>
+            <h2
+              class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+              Get in Touch
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-xl text-slate-400">In hac habitasse platea
+              dictumst
+            </p>
           </div>
-          <div className="flex items-center mt-5">
-            --
-            <span className="text-sm">+93 749 99 65 50</span>
-          </div>
-          <div className="flex items-center mt-5">
-            --
-            <span className="text-sm">24/7</span>
-          </div>
-
         </div>
-        <form className="md:col-span-8 p-10">
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-first-name">
-                First Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                id="grid-first-name" type="text" placeholder="Jane"/> 
-              <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+        <div class="flex items-stretch justify-center">
+          <div class="grid md:grid-cols-2">
+            <div class="h-full pr-6">
+              <p class="mt-3 mb-12 text-lg text-slate-400">
+                Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
+                sagittis ante, ac tincidunt sem venenatis ut.
+              </p>
+              <ul class="mb-6 md:mb-0">
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                      <path
+                        d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
+                    </h3>
+                    <p class="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
+                    <p class="text-gray-600 dark:text-slate-400">New York, EEUU</p>
+                  </div>
+                </li>
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="h-6 w-6">
+                      <path
+                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                      </path>
+                      <path d="M15 7a2 2 0 0 1 2 2"></path>
+                      <path d="M15 3a6 6 0 0 1 6 6"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-white">Contact
+                    </h3>
+                    <p class="text-slate-400">Mobile: +1 (123) 456-7890</p>
+                    <p class="text-slate-400">Mail: tailnext@gmail.com</p>
+                  </div>
+                </li>
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                      <path d="M12 7v5l3 3"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-white">Working
+                      hours</h3>
+                    <p class="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
+                    <p class="text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div className="w-full md:w-1/2 px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-last-name">
-                Last Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-last-name" type="text" placeholder="Doe"/>
+            <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+              <h2 class="mb-4 text-2xl font-bold text-white">Ready to Get Started?</h2>
+              <form id="contactForm">
+                <div class="mb-6">
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="name" />
+                    </div>
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="email" />
+                    </div>
+                  </div>
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0"></textarea>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-password">
-                Email Address
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-email" type="email" placeholder="********@*****.**"/>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-password">
-                Your Message
-              </label>
-              <textarea rows="10"
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
-            </div>
-            <div className="flex justify-between w-full px-3">
-              <div className="md:flex md:items-center">
-                <label className="block text-gray-500 font-bold">
-                  <input className="mr-2 leading-tight" type="checkbox"/>
-                  <span className="text-sm">
-                    Send me your newsletter!
-                  </span>
-                </label>
-              </div>
-              <button
-                className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
-                type="submit">
-                Send Message
-              </button>
-
-            </div>
-            <a className="font-medium text-blue-600 hover:underline">Or click here to reveal our protected email address</a>
-
-          </div>
-
-        </form>
-
+        </div>
       </div>
-    </div>
+    </section>
+
   )
 }
 
