@@ -4,6 +4,7 @@ import Baner from "./Components/Baner"
 import Project from "./Components/Project"
 import ProjectHeading from "./Components/ProjectHeading"
 import Contact from "./Components/Contact"
+import Skills from "./Components/Skills"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <AnimatedCursor/>
       <Baner/>
       <AboutMe/>
+      <Skills/>
       <ProjectHeading/>
       <Project/>
       <Contact/>
