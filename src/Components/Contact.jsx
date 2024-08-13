@@ -1,55 +1,63 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Support() {
+  useEffect(() => {
+    Aos.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, []);
+
   return (
-    <section className="bg-gradient-to-t from-[#0b0d14] from-10% via-[#06071b] via-30% to-[#06071b] to-90% w-full ">
-      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-        <div class="mb-4">
-          <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-            <p class="text-base font-semibold uppercase tracking-wide text-blue-200">
+    <section className="bg-gradient-to-t from-[#0b0d14] via-[#06071b] to-[#06071b] w-full overflow-x-clip">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div className="mb-4">
+          <div className="mb-6 max-w-3xl text-center md:mx-auto md:mb-12">
+            <p className="text-base font-semibold uppercase tracking-wide text-blue-200" data-aos="fade-right">
               Contact
             </p>
             <h2
-              class="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+              className="font-heading mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl"
+              data-aos="fade-left">
               Get in Touch
             </h2>
-            <p class="mx-auto mt-4 max-w-3xl text-xl text-slate-400">In hac habitasse platea
-              dictumst
+            <p className="mx-auto mt-4 max-w-3xl text-xl text-slate-400">
+              Whether you have a question or just want to say hi, feel free to reach out.
             </p>
           </div>
         </div>
-        <div class="flex items-stretch justify-center">
-          <div class="grid md:grid-cols-2">
-            <div class="h-full pr-6">
-              <p class="mt-3 mb-12 text-lg text-slate-400">
-                Class aptent taciti sociosqu ad
-                litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
-                sagittis ante, ac tincidunt sem venenatis ut.
+        <div className="flex items-stretch justify-center">
+          <div className="grid md:grid-cols-2">
+            <div className="h-full pr-6">
+              <p className="mt-3 mb-12 text-lg text-slate-400">
+                I'm always excited to work on new projects and explore new opportunities.
               </p>
-              <ul class="mb-6 md:mb-0">
-                <li class="flex">
-                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+              <ul className="mb-6 md:mb-0">
+                <li className="flex">
+                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" class="h-6 w-6">
+                      stroke-linejoin="round" className="h-6 w-6">
                       <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
                       <path
                         d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
                       </path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
-                    </h3>
-                    <p class="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
-                    <p class="text-gray-600 dark:text-slate-400">New York, EEUU</p>
+                  <div className="ml-4 mb-4">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-white">Location</h3>
+                    <p className="text-slate-400">1230 Maecenas Street, New York, USA</p>
                   </div>
                 </li>
-                <li class="flex">
-                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                <li className="flex">
+                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" class="h-6 w-6">
+                      stroke-linejoin="round" className="h-6 w-6">
                       <path
                         d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                       </path>
@@ -57,49 +65,48 @@ function Support() {
                       <path d="M15 3a6 6 0 0 1 6 6"></path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-white">Contact
-                    </h3>
-                    <p class="text-slate-400">Mobile: +1 (123) 456-7890</p>
-                    <p class="text-slate-400">Mail: tailnext@gmail.com</p>
+                  <div className="ml-4 mb-4">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-white">Contact</h3>
+                    <p className="text-slate-400">Mobile: +1 (123) 456-7890</p>
+                    <p className="text-slate-400">Email: yourname@example.com</p>
                   </div>
                 </li>
-                <li class="flex">
-                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                <li className="flex">
+                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round" class="h-6 w-6">
+                      stroke-linejoin="round" className="h-6 w-6">
                       <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
                       <path d="M12 7v5l3 3"></path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-white">Working
-                      hours</h3>
-                    <p class="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                    <p class="text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                  <div className="ml-4 mb-4">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-white">Availability</h3>
+                    <p className="text-slate-400">Monday - Friday: 09:00 - 18:00</p>
+                    <p className="text-slate-400">Weekends: 10:00 - 14:00</p>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
-              <h2 class="mb-4 text-2xl font-bold text-white">Ready to Get Started?</h2>
+            <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
+              <h2 className="mb-4 text-2xl font-bold text-white">Ready to Get Started?</h2>
               <form id="contactForm">
-                <div class="mb-6">
-                  <div class="mx-0 mb-1 sm:mb-4">
-                    <div class="mx-0 mb-1 sm:mb-4">
-                      <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="name" />
-                    </div>
-                    <div class="mx-0 mb-1 sm:mb-4">
-                      <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="email" />
-                    </div>
+                <div className="mb-6">
+                  <div className="mx-0 mb-1 sm:mb-4">
+                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Name</label>
+                    <input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="name" />
                   </div>
-                  <div class="mx-0 mb-1 sm:mb-4">
-                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0"></textarea>
+                  <div className="mx-0 mb-1 sm:mb-4">
+                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Email</label>
+                    <input type="email" id="email" autocomplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="email" />
+                  </div>
+                  <div className="mx-0 mb-1 sm:mb-4">
+                    <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Message</label>
+                    <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0"></textarea>
                   </div>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                <div className="text-center">
+                  <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
                 </div>
               </form>
             </div>
@@ -107,8 +114,7 @@ function Support() {
         </div>
       </div>
     </section>
-
-  )
+  );
 }
 
-export default Support
+export default Support;
