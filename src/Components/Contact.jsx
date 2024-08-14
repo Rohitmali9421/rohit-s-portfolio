@@ -1,8 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function Contact() {
+  const [result, setResult] = useState(false);
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult(true);
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "bcdd9c56-2472-4f87-b8e1-f4e9af1b9fb7");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult(false);
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(false);
+    }
+  };
+
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -90,25 +115,26 @@ function Contact() {
             </div>
             <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
               <h2 className="mb-4 text-2xl font-bold text-white">Ready to Get Started?</h2>
-              <form id="contactForm">
+              <form id="contactForm" onSubmit={onSubmit}>
                 <div className="mb-6">
                   <div className="mx-0 mb-1 sm:mb-4">
                     <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Name</label>
-                    <input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="name" />
+                    <input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="name" required />
                   </div>
                   <div className="mx-0 mb-1 sm:mb-4">
                     <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Email</label>
-                    <input type="email" id="email" autocomplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="email" />
+                    <input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" name="email" required />
                   </div>
                   <div className="mx-0 mb-1 sm:mb-4">
-                    <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Message</label>
-                    <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0"></textarea>
+                    <label htmlFor="message" className="pb-1 text-xs uppercase tracking-wider text-slate-300">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black sm:mb-0" required></textarea>
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                  {result ? (<button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Sending....</button>):(<button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>)}
                 </div>
               </form>
+             
             </div>
           </div>
         </div>
