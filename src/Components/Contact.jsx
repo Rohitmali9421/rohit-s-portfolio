@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-function Support() {
+function Contact() {
   useEffect(() => {
     Aos.init({
       offset: 200,
@@ -117,4 +117,4 @@ function Support() {
   );
 }
 
-export default Support;
+export default Contact;
