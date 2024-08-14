@@ -19,22 +19,22 @@ function ProjectCard({ Title, GithubLink, LiveLink, Image1, Image2, Image3 }) {
         <a href={GithubLink} className='text-white'><FaGithub /></a>
         <a href={LiveLink} className='text-orange-400'><GoLink /></a>
       </div>
-      <div className='grid grid-cols-3 gap-3 md:gap-10 sm:px-14  px-4 md:px-20 '>
+      <div className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-10 sm:px-14  px-4 md:px-20 '>
         <img
           data-aos="zoom-out-up"
-          className=' col-span-2 row-span-2 h-full object-cover rounded-2xl hover:translate-x-2 hover:translate-y-2 shadow-1xl shadow-black'
+          className=' col-span-2 row-span-2 h-full object-cover md:rounded-2xl rounded-xl hover:translate-x-2 hover:translate-y-2 shadow-1xl shadow-black'
           src={Image1}
           alt="" />
         <img
           data-aos="zoom-out-left"
-          className='w-full object-cover rounded-2xl shadow-1xl shadow-black  '
+          className='w-full object-cover md:rounded-2xl rounded-xl shadow-1xl shadow-black  '
           src={Image2}
           alt="" />
         <img
           data-aos="zoom-out-left"
           data-aos-delay="100"
           data-offset="100"
-          className="w-full object-cover rounded-2xl shadow-1xl shadow-black"
+          className="w-full object-cover md:rounded-2xl rounded-xl shadow-1xl shadow-black"
           src={Image3}
           alt="Description of the image"
         />
