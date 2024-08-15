@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaCode } from "react-icons/fa";
 function Skills() {
+    
     return (
         <div className='w-full bg-blue-50'>
             <h1 className=' text-center font-bold text-3xl font-Kanit'> Skills < FaCode className='text-violet-500 inline text-5xl my-4' /></h1>
