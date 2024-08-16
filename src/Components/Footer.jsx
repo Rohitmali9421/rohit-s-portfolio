@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Footer() {
   return (
     <div className='w-full bg-[#0b0d14] p-3 border-t border-gray-600'>
