@@ -10,29 +10,29 @@ function Skills() {
                 <div className='mx-6 md:mx-12 p-4 md:p-6'>
                     <div>
                         <h1 className='font-Kanit text-orange-400 py-3 text-xl'>HTML</h1>
-                        <div className='w-full bg-gray-300 h-2'>
+                        <div className='w-full bg-gray-300 h-2 rounded overflow-hidden'>
                             <div className='bg-violet-500 w-[90%] h-full'>
                             </div>
                         </div>
                     </div>
                     <div>
                         <h1 className='font-Kanit text-orange-400 py-3 text-xl'>CSS</h1>
-                        <div className='w-full bg-gray-300 h-2'>
+                        <div className='w-full bg-gray-300 h-2 rounded overflow-hidden'>
                             <div className='bg-violet-500 w-[90%] h-full'>
                             </div>
                         </div>
                     </div>
                     <div>
                         <h1 className='font-Kanit text-orange-400 py-3 text-xl'>JavaScript</h1>
-                        <div className='w-full bg-gray-300 h-2'>
-                            <div className='bg-violet-500 w-[90%] h-full'>
+                        <div className='w-full bg-gray-300 h-2 rounded overflow-hidden'>
+                            <div className='bg-violet-500 w-[80%] h-full'>
                             </div>
                         </div>
                     </div>
                     <div>
                         <h1 className='font-Kanit text-orange-400 py-3 text-xl'>Java</h1>
-                        <div className='w-full bg-gray-300 h-2'>
-                            <div className='bg-violet-500 w-[90%] h-full'>
+                        <div className='w-full bg-gray-300 h-2 rounded overflow-hidden'>
+                            <div className='bg-violet-500 w-[60%] h-full'>
                             </div>
                         </div>
                     </div>
