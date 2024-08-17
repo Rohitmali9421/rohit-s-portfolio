@@ -32,9 +32,9 @@ function AboutMe() {
                     <p className='  lg:text-xl md:text-lg py-3 font-extralight font-Kanit'  >I am a proficient web developer skilled in HTML, CSS, JavaScript, and popular frameworks like React and NodeJS. With a focus on creating visually appealing, user-friendly websites that meet client needs.</p>
                     <button type="button" className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download CV</button>
                     <div className='flex gap-2 items-center mt-2 px-2 text-gray-800'>
-                        <a href="#"><FaGithub className='text-xl hover:text-black' /></a>
-                        <a href="#"><FaLinkedin className='text-xl hover:text-black' /></a>
-                        <a href="#"><FaXTwitter className='text-xl hover:text-black' /></a>
+                        <a href="https://github.com/Rohitmali9421"><FaGithub className='text-xl hover:text-black' /></a>
+                        <a href="https://www.linkedin.com/in/rohit-mali7569/"><FaLinkedin className='text-xl hover:text-black' /></a>
+                        <a href="https://twitter.com/rohitma13641165#"><FaXTwitter className='text-xl hover:text-black' /></a>
                         <a href="#"><FaInstagram className='text-xl hover:text-black' /></a>
 
                     </div>
