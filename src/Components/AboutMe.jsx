@@ -37,7 +37,6 @@ function AboutMe() {
                         <a href="https://www.linkedin.com/in/rohit-mali7569/"><FaLinkedin className='text-xl hover:text-black' /></a>
                         <a href="https://twitter.com/rohitma13641165#"><FaXTwitter className='text-xl hover:text-black' /></a>
                         <a href="#"><FaInstagram className='text-xl hover:text-black' /></a>
-
                     </div>
                 </div>
                 <div className='md:col-span-2' data-aos="fade-up">
