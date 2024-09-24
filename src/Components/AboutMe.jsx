@@ -46,8 +46,8 @@ function AboutMe() {
                     </div>
 
                 </div>
-                <div className='md:col-span-2' data-aos="fade-up">
-                    <img className="w-full px-8 md:px-0 pt-3 md:pt-0" src={Rohit} alt="" />
+                <div className='md:col-span-2 p-0 md:p-4' data-aos="fade-up">
+                    <img className="w-full  px-8 md:px-0 pt-3 md:pt-0  " style={{borderRadius:`30% 70% 70% 30% / 30% 30% 70% 70% `}}  src={Rohit} alt="" />
                 </div>
             </div >
             
