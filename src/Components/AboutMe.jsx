@@ -44,6 +44,7 @@ function AboutMe() {
                     <img className="w-full px-8 md:px-0 pt-3 md:pt-0" src={Rohit} alt="" />
                 </div>
             </div >
+            
         </>
     )
 }
