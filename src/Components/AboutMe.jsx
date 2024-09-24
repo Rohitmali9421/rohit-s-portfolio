@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css';  // Don't forget to import the CSS file
+import 'aos/dist/aos.css';  
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";  // Assuming you meant to use FaTwitter instead of FaXTwitter
+import { FaXTwitter } from "react-icons/fa6";  
 import { FaInstagram } from "react-icons/fa";
 import Rohit from '../assets/Rohit.png';
 
@@ -38,7 +38,7 @@ function AboutMe() {
                         <a href="https://twitter.com/rohitma13641165#"><FaXTwitter className='text-xl hover:text-black' /></a>
                         <a href="#"><FaInstagram className='text-xl hover:text-black' /></a>
                     </div>
-                    
+
                 </div>
                 <div className='md:col-span-2' data-aos="fade-up">
                     <img className="w-full px-8 md:px-0 pt-3 md:pt-0" src={Rohit} alt="" />
